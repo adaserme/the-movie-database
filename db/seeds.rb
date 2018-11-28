@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Director.destroy_all
+ 
+Movie.create!([{
+  title: "INVISIBLE",
+  release_year: "2013",
+},
+{
+  title: "LA CHUTE DE LA MAISON BLANCHE",
+  release_year: "2013",
+},
+{title: "FAST AND FURIOUS",
+ release_year: "2017"
+
+}
+{
+  title: "Terminator Genisys",
+  release_year: "2012",
+}])
+ 
+p "Created #{Movie.count} movies"
