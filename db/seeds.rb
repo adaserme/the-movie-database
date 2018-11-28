@@ -17,9 +17,9 @@ Movie.create!([{
   release_year: "2013",
 },
 {title: "FAST AND FURIOUS",
- release_year: "2017"
+ release_year: "2017",
 
-}
+},
 {
   title: "Terminator Genisys",
   release_year: "2012",
