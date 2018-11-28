@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   def index
 
-    @movies = "Movie.all" + "director.first_name" 
+    @movies = Movie.all
     
   end
 
