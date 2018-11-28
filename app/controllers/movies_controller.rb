@@ -1,13 +1,10 @@
 class MoviesController < ApplicationController
   def index
 
-    @movies.directors = Movie.all
+    @movies = Movie.all
     
   end
 
-  def directors
-    @directors = Director.all
-  end
 
   def home
   end
