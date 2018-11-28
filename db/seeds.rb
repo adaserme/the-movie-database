@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Director.all.destroy 
+Director.destroy_all 
  
 Movie.create!([{
   title: "INVISIBLE",
