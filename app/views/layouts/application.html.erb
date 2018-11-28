@@ -38,8 +38,7 @@
         </div>
       </nav>
       <div class="container" style="padding-top: 5rem;">
-      <% @movies.each do |movie| %>
-    <p> <%= movie.title %>, sortie en <%= movie.release_year %> réalisé par <%= movie.director %> </p>
+       
 
     <%= yield %>
       </div>
