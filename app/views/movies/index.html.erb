@@ -1,5 +1,5 @@
 <h1> Liste des films </h1>
-<% @movies.each do |movie| %>
-    <p> <%= movie.title %>, sortie en <%= movie.release_year %></p>
+<% @movies.directors.each do |movie.director| %>
+    <p> <%= movie.director.title %>, sortie en <%= movie.director.release_year %>, realiser en <%= movie.director.first_name %></p>
 <% end %> 
     
