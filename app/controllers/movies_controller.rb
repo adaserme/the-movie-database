@@ -5,6 +5,10 @@ class MoviesController < ApplicationController
     
   end
 
+  def directors
+    @directors = Director.all
+  end
+
   def home
   end
 end
