@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'movies/index'
   
   get '/home', to: 'movies#home'
+  
+  resources :movies
 
   
 
