@@ -5,6 +5,10 @@ class MoviesController < ApplicationController
     
   end
 
+  def show
+    @movies = Movie.find(params[:id])
+  end
+  
 
   def home
   end
