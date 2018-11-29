@@ -25,6 +25,11 @@ class MoviesController < ApplicationController
     redirect_to movies_path
 
   end
+
+  def def new
+    @movie = Movie.new
+  end
+  
   
 
   def home
