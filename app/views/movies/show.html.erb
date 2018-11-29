@@ -1,6 +1,10 @@
-<h1><%= @movie.title %>, realiser en <%= @movie.release_year %></h1>
+<h1><% @movies.each do |movie| %></h1>
+    <p><%= movie.title %>, realiser en <%= movie.release_year %></p>
+    
+
 
 <p>
     <a href="<%= movies_path %>" class="btn btn_primary">Revenir aux articlces</a>
 </p>
+<% end %>
 
