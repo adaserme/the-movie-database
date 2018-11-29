@@ -31,15 +31,10 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.create(movie_params) 
+    movie_params = params.require(:movie).permit(:title)
     redirect_to movie_path(movie.id)
   end
   
-  private
-
-  def post_params
-    params.require(:movie).permit(:title)
-  end
   
 
   def home
