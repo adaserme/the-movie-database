@@ -29,7 +29,17 @@ class MoviesController < ApplicationController
   def new
     @movie = Movie.new
   end
+
+  def create
+    movie = Movie.create(movie_params) 
+    redirect_to movie_path(movie.id)
+  end
   
+  private
+
+  def post_ params
+    params.require(:movie).permit(:title)
+  end
   
 
   def home
