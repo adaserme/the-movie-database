@@ -26,7 +26,7 @@ class MoviesController < ApplicationController
 
   end
 
-  def def new
+  def new
     @movie = Movie.new
   end
   
